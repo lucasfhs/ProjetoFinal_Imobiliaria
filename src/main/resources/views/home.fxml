@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="fundo_principal" fitHeight="720.0" fitWidth="1316.0" layoutX="-28.0" pickOnBounds="true">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <image>
+            <Image url="@../images/backgrounds/home.png" />
+         </image>
+         <effect>
+            <SepiaTone level="0.35" />
+         </effect></ImageView>
+      <ComboBox fx:id="cb_imovel" layoutX="706.0" layoutY="288.0" prefHeight="26.0" prefWidth="182.0" promptText="Apartamento / Casa" styleClass="botoesTipo2" stylesheets="@../styles/window.css">
+         <effect>
+            <SepiaTone />
+         </effect></ComboBox>
+      <ComboBox fx:id="cb_estado" layoutX="706.0" layoutY="334.0" onAction="#clickEstado" prefHeight="26.0" prefWidth="182.0" promptText="Selecione" styleClass="botoesTipo2" stylesheets="@../styles/window.css">
+         <effect>
+            <SepiaTone />
+         </effect></ComboBox>
+      <ComboBox fx:id="cb_acao" layoutX="706.0" layoutY="237.0" prefHeight="26.0" prefWidth="182.0" promptText="Alugar / Comprar" styleClass="botoesTipo2" stylesheets="@../styles/window.css">
+         <effect>
+            <SepiaTone />
+         </effect></ComboBox>
+      <Label fx:id="label4" layoutX="380.0" layoutY="392.0" prefHeight="24.0" prefWidth="232.0" text="Digite sua cidade:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Button fx:id="bt_pesquisar" layoutX="426.0" layoutY="583.0" mnemonicParsing="false" onAction="#clickPesquisar" prefHeight="43.0" prefWidth="141.0" styleClass="botoesTipo2" stylesheets="@../styles/window.css" text="Pesquisar">
+         <effect>
+            <SepiaTone level="0.5" />
+         </effect></Button>
+      <Button fx:id="bt_sair" layoutX="630.0" layoutY="583.0" mnemonicParsing="false" onAction="#clickSair" prefHeight="43.0" prefWidth="141.0" styleClass="botoesTipo2" stylesheets="@../styles/window.css" text="Sair">
+         <effect>
+            <SepiaTone level="0.5" />
+         </effect></Button>
+      <Label fx:id="label3" layoutX="379.0" layoutY="336.0" text="Escolha seu estado:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Label fx:id="label2" layoutX="379.0" layoutY="289.0" text="Escolha o tipo de imovel:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Label fx:id="label1" layoutX="380.0" layoutY="238.0" text="Escolha o que deseja:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <Text layoutX="425.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JOTA">
+         <font>
+            <Font name="Loma Bold" size="69.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <Text fill="#ee4d13" layoutX="621.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMOVEIS">
+         <font>
+            <Font name="Loma Bold" size="69.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <Text layoutX="71.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Encontre o seu lar perfeito com a nossa expertise imobiliária! ">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="43.0" layoutX="334.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+      <Polyline fill="#ff9908f7" layoutX="355.0" layoutY="93.0" points="-50.0, -40.0, 50.0, -40.0, 5.0, -79.27587890625, -50.0, -40.0" strokeType="INSIDE" />
+      <ComboBox fx:id="cb_cidade" disable="true" layoutX="706.0" layoutY="391.0" prefHeight="26.0" prefWidth="182.0" promptText="Selecione" styleClass="botoesTipo2" stylesheets="@../styles/window.css">
+         <effect>
+            <SepiaTone />
+         </effect>
+      </ComboBox>
+   </children>
+</Pane>

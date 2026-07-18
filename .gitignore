@@ -1,1 +1,16 @@
-/dist/
+# Maven and packaged application output
+/target/
+/release/
+
+# IDE metadata
+/.idea/
+/.vscode/
+*.iml
+*.class
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local application data
+/.jota-properties/
