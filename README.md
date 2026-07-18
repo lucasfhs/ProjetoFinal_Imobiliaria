@@ -1,4 +1,4 @@
-# Jota Imóveis
+# Jota Imóveis (2023 Legacy Project)
 
 Jota Imóveis is a desktop real estate catalog built with Java 21 and JavaFX. It was originally developed as the final project for the Computer Programming II course and demonstrates a complete property-browsing flow, from searching the catalog to viewing a simulated payment screen.
 
